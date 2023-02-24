@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* я не разобрался как мне использовать эту ссылку, поэтому обыграл иконки немного другим способом*/
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-change {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.product_ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.product_ul_module {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  
+.product_li {
+  text-decoration: none;
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2)
+}
+
+.product_li_module {
+    text-decoration: none;
+    max-width: 1200px;
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+.product_img {
+    max-width: 100px;
+
+}
+
+.product_name {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.product_color {
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.product_color_module {
+    
+  }
+
+.wrap {
+    display: flex;
+    color: red;
+    padding: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+
+.btn-add {
+    margin-left: auto;
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn-add_module {
+    margin: 0;
+}

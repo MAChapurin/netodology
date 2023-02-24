@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}

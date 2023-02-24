@@ -1,0 +1,57 @@
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.nav-main {
+  margin-top: 30px;
+}
+
+.nav-main a {
+  margin-right: 10px;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrap img {
+  width: 100px;
+  transform: translateX(-100px);
+}
+
+.yandex-search {
+  border: 2px solid yellow;
+  padding: 10px;
+  width: 600px;
+  transform: translateX(-100px);
+}
+
+.form button {
+  padding: 10px;
+  border: 2px solid yellow;
+  background-color: yellow;
+  color: #333;
+  transform: translateX(-100px);
+}
+
+.promo {
+  margin-top: 10px;
+  width: 60%;
+  height: 200px;
+}
+
+.addedPart {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.ul li {
+  margin-bottom: 10px;
+}
