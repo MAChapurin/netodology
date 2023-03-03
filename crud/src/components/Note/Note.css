@@ -1,0 +1,30 @@
+.card {
+  width: 190px;
+  min-height: 200px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid black;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card__btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: red;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card__p {
+  max-width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}

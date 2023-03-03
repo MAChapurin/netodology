@@ -1,0 +1,25 @@
+.form {
+    position: relative;
+    max-width: 300px;
+    min-height: 100px;
+    background: gray;
+}
+
+.form__input {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+}
+
+.form__btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.form__btn img {
+    width: 20px;
+    height: 20px;
+}

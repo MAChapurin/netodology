@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.chat-display {
+  height: 80vh;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.message-left {
+  align-self: flex-start;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.message-right {
+  align-self: flex-end;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.chat__form {
+  display: flex;
+  width: 100%;
+}
+
+.chat__input {
+  padding: 5px;
+}
+
+.chat__img {
+  width: 20px;
+}

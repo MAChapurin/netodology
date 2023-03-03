@@ -1,0 +1,116 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 20px;
+}
+
+.h2 {
+    position: absolute;
+    bottom: 50px;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.1;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.hour {
+    position: absolute;
+}
+
+.hours {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.hours::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 50px;
+    background: black;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.minute {
+    position: absolute;
+}
+
+.minutes {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.minutes::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    background: black;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.second {
+    position: absolute;
+}
+
+.seconds {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.seconds::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background: black;
+    z-index: 12;
+    border-radius: 2px 2px 0 0;
+}

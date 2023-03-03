@@ -1,0 +1,7 @@
+.Notes__ul {
+    max-width: 1200px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
