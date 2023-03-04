@@ -1,11 +1,13 @@
 import "../../App.css";
 // import React, {useEffect, useRef} from "react";
 
-export function ChatDisplay({ messages, userId }) {
+export function ChatDisplay({ chat, messages, userId }) {
 
   return (
-    <div className="chat-display">
-        <h1>Anonimus Chat</h1>
+    <div>
+      <h1>Anonimus chat</h1>
+    <div className="chat-display" ref={chat}>
+       
       {messages.map((message) => {
         return (
           <div key={message.id}
@@ -17,6 +19,7 @@ export function ChatDisplay({ messages, userId }) {
           </div>
         );
       })}
+    </div>
     </div>
   );
 }

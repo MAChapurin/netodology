@@ -8,6 +8,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const inputRef = createRef();
   const btnRef = createRef();
+  const chat = createRef();
 
   const keyId = "keyId";
 
@@ -46,27 +47,29 @@ function App() {
       inputRef.current.value = "";
       console.log("from add: ", messages);
       fetch("http://localhost:7777/messages")
-      .then((res) => res.json())
-      .then((data) => {
-        setMessages([...data]);
-        console.log(messages, data);
-      });
+        .then((res) => res.json())
+        .then((data) => {
+          setMessages([...data]);
+          console.log(chat.current);
+          chat.current.scrollTo(0, chat.current.scrollHeight + 9999);
+          console.log("from add:", messages, data);
+          console.log(chat.current.scrollHeight);
+        });
     }
   };
-
 
   useEffect(() => {
     fetch("http://localhost:7777/messages")
       .then((res) => res.json())
       .then((data) => {
         setMessages([...messages, ...data]);
-        console.log(messages, data);
+        console.log("useEffect:", messages, data);
       });
   }, []);
 
   return (
     <div className="App">
-      <ChatDisplay messages={messages} userId={userId} />
+      <ChatDisplay chat={chat} messages={messages} userId={userId} />
       <ChatKeyBoard
         messages={messages}
         inputRef={inputRef}

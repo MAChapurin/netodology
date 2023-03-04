@@ -8,8 +8,10 @@
 }
 
 .chat-display {
-  height: 80vh;
-  background: gray;
+  padding-bottom: 50px;
+  border: 1px solid black;
+  height: 400px;
+  background: transparent;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -23,6 +25,7 @@
   border-radius: 30px;
   max-width: 200px;
   margin-bottom: 10px;
+  background-color: aliceblue;
 }
 
 .message-right {
@@ -32,6 +35,7 @@
   border-radius: 30px;
   max-width: 200px;
   margin-bottom: 10px;
+  background-color: azure;
 }
 
 .chat__form {
