@@ -24,6 +24,14 @@ function App() {
 
   const userId = getUserId(keyId);
 
+  const resetMessages = () => {
+    fetch("http://localhost:7777/messages")
+      .then((res) => res.json())
+      .then((data) => {
+        setMessages([...data]);
+      });
+  };
+
   const sendMessages = async (userId) => {
     const url = `http://localhost:7777/messages?from={${userId}}`;
     // const data = {};
@@ -52,20 +60,25 @@ function App() {
           setMessages([...data]);
           console.log(chat.current);
           chat.current.scrollTo(0, chat.current.scrollHeight + 9999);
-          console.log("from add:", messages, data);
-          console.log(chat.current.scrollHeight);
         });
     }
   };
 
   useEffect(() => {
-    fetch("http://localhost:7777/messages")
-      .then((res) => res.json())
-      .then((data) => {
-        setMessages([...messages, ...data]);
-        console.log("useEffect:", messages, data);
-      });
+    const timerId = setInterval(()=> {
+      console.log('Hi')
+      resetMessages()
+    },1500)
+    return () => {
+      console.log('By')
+      clearInterval(timerId)
+    }
   }, []);
+
+  useEffect(() => {
+    chat.current.scrollTo(0, chat.current.scrollHeight + 9999);
+    console.log("change");
+  }, [messages]);
 
   return (
     <div className="App">
