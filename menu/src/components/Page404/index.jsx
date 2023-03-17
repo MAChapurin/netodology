@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Page404() {
     return (
@@ -7,9 +7,9 @@ export function Page404() {
         <p className="article__paragraph">
             Страница не найдена по указанному адресу
         </p>
-        <NavLink className="menu__item" to="/">
+        <Link className="menu__item" to="/">
           На главную
-        </NavLink>
+        </Link>
         </div>
     )
 }
