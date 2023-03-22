@@ -16,7 +16,7 @@ export function CreatePost() {
       content: inputValue,
     };
 
-    fetch("http://localhost:7777/posts", {
+    fetch("http://localhost:7070/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

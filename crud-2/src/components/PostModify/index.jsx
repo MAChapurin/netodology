@@ -19,7 +19,7 @@ export function PostModify({ posts }) {
       content: inputValueModify,
     };
 
-    fetch("http://localhost:7777/posts", {
+    fetch("http://localhost:7070/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -29,7 +29,7 @@ export function PostModify({ posts }) {
       getPosts();
       console.log(newPost);
       setInputValueModify("");
-      fetch(`http://localhost:7777/posts/${pId}`, {
+      fetch(`http://localhost:7070/posts/${pId}`, {
         method: "DELETE",
       }).finally(()=>{
         getPosts()
